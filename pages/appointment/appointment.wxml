@@ -1,0 +1,61 @@
+<!--pages/appointment/appointment.wxml-->
+<view class='container'>
+  <view class='item item-info'>
+    <image style='width:55rpx; height:55rpx;' src='/pages/img/ghicon1@2x.png'></image>
+    <text>门诊信息</text>
+    <image bindtap='call' style='width:39rpx; height:48rpx;' src='/pages/img/tel@2x.png'></image>
+  </view>
+
+  <view class='item item-position'>
+    <view class='text-wrap'>
+      <text class="main-text">广州华美医疗美容医院</text>
+      <text class="sub-text">广州天河黄埔大道西493号（国防大厦公交2站）</text>
+    </view>
+    <navigator url='/pages/map/map'>
+      <image style='width:36rpx;height:48rpx;' src='/pages/img/loction@2x.png'></image>
+    </navigator>
+  </view>
+
+  <form bindsubmit="formSubmit">
+    <view class='item item-people'>
+      <image style='width:48rpx;height:48rpx;' src='/pages/img/people@2x.png'></image>
+      <label>就诊人</label>
+      <input name="people" placeholder-class="placeholder" placeholder='填写就诊人'></input>  
+    </view>
+
+    <view class='item item-time'>
+      <view class='cont1'>
+        <image style='width:48rpx;height:48rpx;' src='/pages/img/time@2x.png'></image>
+        <label>预约时间</label>
+      </view>
+
+      <view class='cont2'>
+        <picker name="date" mode="date" value="{{date}}" start="2017-10-01" end="{{endTime}}" bindchange="bindDateChange">
+          <view class="picker">{{date}}</view>
+        </picker>
+        <picker name="time" mode="time" value="{{time}}" start="09:00" end="18:00" bindchange="bindTimeChange">
+          <view class="picker">{{time}}</view>
+        </picker>    
+      </view>
+    </view> 
+
+    <view class='item item-cont'>
+      <view class='top'>
+        <image style='width:36rpx; height:44rpx;' src='/pages/img/wdzl@2x.png'></image>
+        <text>请选择项目</text>
+      </view>
+      <view class='body' animation="{{animationData}}">
+        <block wx:for="{{oppItem}}">
+          <view style="display:{{item.hideview ? 'none' : 'flex'}}" class='icon-wrap'>
+            <view class="{{item.imgClass}}" data-index='{{index}}' bindtap="{{index == 11?'showMore':'selected'}}">
+              <image style='width:100rpx;height:100rpx' src='/pages/img/{{item.pic}}@2x.png'></image>
+            </view>
+            <text>{{item.itemText}}</text>
+          </view>
+        </block> 
+      </view>
+    </view> 
+    <view class='btn-view'><button form-type='submit' hover-class='other-button-hover'>提交预约</button></view>
+  </form>
+</view>
+

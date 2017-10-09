@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view>
+  <navigator url='/pages/appointment/appointment'>挂号预约页</navigator>
+</view>
