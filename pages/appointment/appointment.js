@@ -1,27 +1,27 @@
 // pages/appointment/appointment.js
-var appInstance = getApp()
 var itemArr = [
-  { imgClass: "img-wrap", pic: "yj", itemText: "眼部", hideview: false, flag: "unselect"},
-  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部", hideview: false, flag: "unselect"},
-  { imgClass: "img-wrap", pic: "yj", itemText: "眼部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "yj", itemText: "眼部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "yj", itemText: "眼部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "yj", itemText: "眼部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "yj", itemText: "眼部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "More", itemText: "更多项目", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "yj", itemText: "眼部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "yj", itemText: "眼部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "yj", itemText: "眼部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部", hideview: false, flag: "unselect" },
-  { imgClass: "img-wrap", pic: "yj", itemText: "眼部", hideview: false, flag: "unselect"}
+  { imgClass: "img-wrap", pic: "yj", itemText: "眼部"},
+  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部"},
+  { imgClass: "img-wrap", pic: "yj", itemText: "眼部"},
+  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部"},
+  { imgClass: "img-wrap", pic: "yj", itemText: "眼部"},
+  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部"},
+  { imgClass: "img-wrap", pic: "yj", itemText: "眼部"},
+  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部"},
+  { imgClass: "img-wrap", pic: "yj", itemText: "眼部"},
+  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部"},
+  { imgClass: "img-wrap", pic: "yj", itemText: "眼部"},
+  { imgClass: "img-wrap", pic: "More", itemText: "更多项目"},
+  { imgClass: "img-wrap", pic: "yj", itemText: "眼部"},
+  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部"},
+  { imgClass: "img-wrap", pic: "yj", itemText: "眼部"},
+  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部"},
+  { imgClass: "img-wrap", pic: "yj", itemText: "眼部"},
+  { imgClass: "img-wrap", pic: "bb", itemText: "鼻部"},
+  { imgClass: "img-wrap", pic: "yj", itemText: "眼部"}
 ]
 
+var Zan = require('../common.js')
 function getNowTime(){
   //获取当前时间
   var date = new Date()
@@ -56,20 +56,23 @@ function getEndTime(){
   return currentdate
 }
 
-Page({
+Page(Object.assign({},Zan.Toast,{
   //页面的初始数据
   data: {
     time: "8:30",
     date: getNowTime(),
     endTime: getEndTime(),
     oppItem: itemArr,
+    toast:{
+      show: false,
+      info: ""
+    }
   },
+
   onLoad:function(){
-    itemArr[11].hideview = false
-    this.setData({
-      oppItem: itemArr
-    })
+    
   },
+  
   selected: function(e){
     //item选中函数事件
     var index = e.currentTarget.dataset.index
@@ -81,12 +84,9 @@ Page({
   },
   showMore: function(e){
     //更多项目函数事件
-
-    itemArr[11].hideview = true
     this.setData({
-       oppItem: itemArr
+      "oppItem[11].hideview": true
      })
-
     var animation = wx.createAnimation({
       duration: 1000,
       timingFunction: 'ease',
@@ -134,18 +134,18 @@ Page({
     selectedItems = selectedItems.substring(0, selectedItems.length - 1)
 
     if (people == ""){//就诊人填写验证
-      wx.showToast({
-        title:"请填写就诊人。",
-        icon: "loading"
-      })
+      this.showToggle("请填写就诊人")
     } else if (selectedItems == "") {//预约项目验证
-      wx.showToast({
-        title: "请选择预约项目。",
-        icon: "loading"
-      })
+      this.showToggle("请选择预约项目")
     }else{//发送请求
+      console.log(selectedItems)
+      wx.showToast({
+        title: "提交成功",
+        icon: 'success',
+        duration: 1000
 
+      })
     }
-
   }
-})
+ 
+}))

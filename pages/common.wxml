@@ -1,0 +1,4 @@
+<!-- Toast wxml模板 -->
+<template name="toast">
+  <view wx:if="{{toast.show}}" class='toast'>{{toast.info}}</view>
+</template>

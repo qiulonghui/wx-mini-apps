@@ -46,7 +46,7 @@
       </view>
       <view class='body' animation="{{animationData}}">
         <block wx:for="{{oppItem}}">
-          <view style="display:{{item.hideview ? 'none' : 'flex'}}" class='icon-wrap'>
+          <view style="display:{{item.hideview == true ? 'none' : 'flex'}}" class='icon-wrap'>
             <view class="{{item.imgClass}}" data-index='{{index}}' bindtap="{{index == 11?'showMore':'selected'}}">
               <image style='width:100rpx;height:100rpx' src='/pages/img/{{item.pic}}@2x.png'></image>
             </view>
@@ -59,3 +59,5 @@
   </form>
 </view>
 
+<import src="/pages/common.wxml"/>
+<template is="toast" data = "{{toast}}"/>
