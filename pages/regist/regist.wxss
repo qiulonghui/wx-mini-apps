@@ -1,0 +1,134 @@
+/* pages/regist/regist.wxss */
+.main-wrap{
+  height: 100vh;
+  padding-top: 105rpx;
+  overflow: hidden;
+  position: relative;
+  background-image: url(https://ip.freep.cn/591769/wximg/background@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.bg-img{
+  width: 100%;
+  height: 100vh;
+}
+.logo{
+  width: 282rpx;
+  height: 185rpx;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 130rpx;
+}
+form{
+  display: block;
+  padding: 0 136rpx;
+}
+
+input.input{
+  height: 72rpx;
+  padding-left: 24rpx;
+  color: #ffffff;
+  font-size: 30rpx;
+}
+.old-input{
+  width: 354rpx;
+  display: inline-block;
+}
+.input-wrap{
+  position: relative;
+  height: 72rpx;
+  margin-bottom: 48rpx;
+
+}
+.input-wrap::before{
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  border: 1rpx solid #FFFFFF;
+  border-radius: 72rpx;
+  -webkit-transform: scale(0.5,0.5);
+  transform: scale(0.5,0.5);
+  margin-top:-1rpx;
+  margin-left:-1rpx;
+}
+.male{
+  display: inline-block;
+  width: 100rpx;
+  vertical-align: top;
+  height: 72rpx;
+  line-height: 72rpx;
+  font-size: 30rpx;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  padding-left:20rpx;
+  box-sizing: border-box;
+}
+.male::before{
+  content: "";
+  position: absolute;
+  width: 1rpx;
+  height: 50rpx;
+  top: 12rpx;
+  left: 0;
+  background-color: #ffffff;
+  transform: scaleX(0.5);
+}
+.male::after{
+  position:absolute;
+  top:48%;
+  right:10px;
+  content:" ";
+  display:inline-block;
+  height:6px;
+  width:6px;
+  border-width:0 1px 1px 0;
+  border-color:#fff;
+  border-style:solid;
+  transform:translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+.submit-btn{
+  border-radius: 72rpx;
+  height:72rpx;
+  line-height: 72rpx;
+  font-size: 36rpx;
+  color: #a32351;
+  background-color: rgba(255, 255, 255, 0.7)
+}
+.code-input{
+  display: inline-block;
+}
+.code-btn{
+  display: inline-block;
+  height: 72rpx;
+  line-height: 72rpx;
+  text-align: center;
+  width: 184rpx;
+  color: #b7882d;
+  font-size: 30rpx;
+  vertical-align: top;
+  position: relative;
+}
+.code-btn2{
+  color: #b5b5b5;
+}
+.code-btn::after{
+  content: "";
+  position: absolute;
+  width: 1rpx;
+  height: 50rpx;
+  top: 12rpx;
+  left: 0;
+  background-color: #ffffff;
+  transform: scaleX(0.5);
+}
+.code-wrap{
+  display: flex;
+}
+.code-wrap input{
+  flex: 1;
+}

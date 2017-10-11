@@ -3,7 +3,10 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/appointment/appointment",
-    "pages/map/map"
+    "pages/map/map",
+    "pages/regist/regist",
+    "pages/vipcenter/vipcenter",
+    "pages/intgral/intgral"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,4 +1,6 @@
 <!--index.wxml-->
 <view>
   <navigator url='/pages/appointment/appointment'>挂号预约页</navigator>
+  <navigator url='/pages/regist/regist'>注册页面</navigator>
+  <navigator url='/pages/vipcenter/vipcenter'>会员中心页面</navigator>
 </view>

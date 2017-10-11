@@ -41,7 +41,7 @@
 
     <view class='item item-cont'>
       <view class='top'>
-        <image style='width:36rpx; height:44rpx;' src='/pages/img/wdzl@2x.png'></image>
+        <image style='width:48rpx; height:48rpx;' src='/pages/img/wdzl@2x.png'></image>
         <text>请选择项目</text>
       </view>
       <view class='body' animation="{{animationData}}">
