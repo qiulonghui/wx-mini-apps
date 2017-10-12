@@ -1,2 +1,45 @@
 <!--pages/intgral/intgral.wxml-->
-<view class='main-wrap'></view>
+<view class='main-wrap'>
+  <view class='cont1'>
+    <view class='top'>
+      <image src='/pages/img/vip@2x.png'></image>
+      <text class='title'>我的积分</text>
+      <text class='score'>66000</text>
+    </view>
+  </view>
+
+  <view class='cont2'>
+    <view class='top bar'>
+      <image src='/pages/img/jf2@2x.png'></image>
+      <text class='title'>会员积分</text>
+    </view>
+    <view class='body'>
+      <text>1、开卡即可获50积分
+      2、每消费10元可获得1积分
+      3、会员生日当天消费，获得双倍积分
+      4、每个月最后一个星期日为会员日，会员日当天消费可获得双倍积分
+      5、会员转介绍，可获得被介绍人首次消费金额的10%积分；另外还可获得相应礼品
+      6、老会员转介绍新会员，老会员可获得20积分
+      7、会员积极参加医院组织的各项活动，可获得相对应积分
+      8、会员参与满意度评价，可获得相对应积分
+      9、其他积分奖励规定详情咨询医院会员中心
+      10、满意度评价每条可获得30个积分
+      </text>
+    </view>
+  </view>
+
+  <view class='cont3'>
+    <view class='top bar'>
+      <image src='/pages/img/jf3@2x.png'></image>
+      <text class='title'>积分兑换</text>
+    </view>
+    <view class='body'>
+      <text>1、兑换健康护理产品
+            2、兑换健康家居用品
+            3、兑换健康运动方式
+            4、兑换健康生活休闲
+            5、兑换健康公益
+      </text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/store/store.wxml-->
+<view class='main-wrap'>
+  <view class='top'>
+    <text class='title'>我的积分</text>
+    <text class='spilt'>:</text>
+    <text class='score'>33500</text>
+  </view>
+  <block wx:for="{{itemArr}}">
+    <navigator url='{{item.url}}' class='item'>
+      <image src='/pages/img/{{item.img}}@2x.png'></image>
+      <view class='text-cont'>
+        <text class='main-text'>{{item.mainText}}</text>
+        <text class='sub-text'>{{item.subText}}</text>
+      </view>
+    </navigator>
+  </block>
+  <view hover-class='more-hover' class='more'>
+    <text>查看更多</text>
+  </view>
+</view>

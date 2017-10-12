@@ -1,37 +1,10 @@
-@import "./zanui-weapp/dist/index.wxss";
-/**app.wxss**/
-.container{
-  background: #e6e6e6;
-  overflow: hidden;
-  min-height: 100vh;
-  box-sizing: border-box;
-} 
-/* 公用弹出层的样式 */
-.toast{
-  position:fixed;
-  top:35%;
-  left:20%;
-  transform:translateZ(0) translateY(-100%);
-  background:rgba(0, 0, 0, 0.7);
-  color:#fff;
-  font-size:14px;
-  width:60%;
-  line-height:1.5em;
-  margin:0 auto;
-  box-sizing:border-box;
-  padding:10px;
-  text-align:center;
-  border-radius:4px;
-  z-index:100;
-}
-
-/* 商品列表页的公共样式 */
-.goodslist{
+/* pages/store/store.wxss */
+.main-wrap{
   background-color: #e6e6e6;
   min-height: 100vh;
   overflow-x: hidden;
 }
-.goodslist .top{
+.top{
   padding:0 30rpx; 
   height: 90rpx;
   display: flex;
@@ -40,13 +13,17 @@
   background-color: #fff;
   position: relative;
 }
-.goodslist .top .title{
+.top .title{
   color: #a32351;
 }
-.goodslist .top .score{
+.top .score{
   color: #b7882d;
 }
-.goodslist .top::after{
+.spilt{
+  margin: 0 15rpx;
+  color: #a32351;
+}
+.top::after{
   content: "";
   width: 100%;
   height: 1rpx;
@@ -55,14 +32,14 @@
   transform: scaleY(0.5);
   margin-top: 45rpx;
 }
-.goodslist .item{
+.item{
   padding: 32rpx 30rpx;
   display: flex;
   align-items: center;
   background-color: #fff;
   position: relative;
 }
-.goodslist .item::after{
+.item::after{
   content: "";
   width: 100%;
   height: 1rpx;
@@ -70,48 +47,35 @@
   position: absolute;
   left: 30rpx;
   transform: scaleY(0.5);
-  margin-top:95rpx; 
+  margin-top:91rpx; 
 }
-.goodslist .item image{
+.item image{
   width: 120rpx;
   height: 120rpx;
   margin-right: 24rpx; 
 }
-.goodslist .text-cont{
+.text-cont{
   flex: 1;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   position: relative;
 }
-.goodslist .text-cont text{
+.text-cont text{
   display: block;
   width: 100%;
 }
-.goodslist .main-text{
+.main-text{
   font-size: 34rpx;
   color: #333;
-  margin-bottom: 8rpx;
+  margin-bottom: 16rpx;
 }
-.goodslist .middle-text,
-.goodslist .sub-text{
+.sub-text{
   font-size: 26rpx;
   color: #a4a9b0;
 }
-.goodslist .sub-text text{
-  display: inline-block;
-  width: auto;
-}
-.goodslist .sub-text text:last-child{
-  color: #b7882d;
-}
-.goodslist .middle-text{
-  margin-bottom: 8rpx;
-}
-.goodslist .spilt{
-  margin: 0 15rpx;
-}
-.goodslist .text-cont::after{
+.text-cont::after,
+.more::after{
   position:absolute;
   top:50%;
   right:0;
@@ -123,4 +87,19 @@
   border-color:#c7c7c7;
   border-style:solid;
   transform:translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+.more{
+  padding: 32rpx 30rpx;
+  background-color: #fff;
+  position: relative;
+}
+.more text{
+  font-size: 28rpx;
+  color: #888;
+}
+.more::after{
+  right:30rpx;
+}
+.more-hover{
+  opacity: 0.7;
 }

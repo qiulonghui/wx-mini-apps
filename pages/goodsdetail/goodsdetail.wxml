@@ -1,0 +1,21 @@
+<!--pages/goodsdetail/goodsdetail.wxml-->
+<view class='goodsdetail'>
+  <view class='con1'>
+    <image src='/pages/img/sp2-2x.jpg'></image>
+    <view>
+      <text class='sp-name'>香港赛诺记忆健康枕 (成人)</text>
+      <text>计价单位: 个</text>
+      <text>产地： 香港</text>
+      <text>等级： 合格品</text>
+      <text>规格： S</text>
+      <text>经销商：暨南大学穗华口腔医院</text>
+      <view class='dh'><text>兑换积分：</text><text>2500分</text></view>
+    </view>
+  </view>
+  <view class='con2'>
+    <view class='title'>奖品领取方式 :</view>
+    <view class='cont'>
+    请前往华美医疗美容医院前台凭手机号和姓名领取奖品，如有疑问，请主动联系客服，谢谢您的参与。
+    </view>
+  </view>
+</view>

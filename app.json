@@ -6,7 +6,10 @@
     "pages/map/map",
     "pages/regist/regist",
     "pages/vipcenter/vipcenter",
-    "pages/intgral/intgral"
+    "pages/intgral/intgral",
+    "pages/store/store",
+    "pages/goodslist/goodslist",
+    "pages/goodsdetail/goodsdetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

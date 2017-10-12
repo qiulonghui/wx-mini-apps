@@ -1,0 +1,3 @@
+<!--pages/goodslist/goodslist.wxml-->
+<import src="/pages/common.wxml"/>  
+<template is="goodslist" data="{{goodslist}}"></template>

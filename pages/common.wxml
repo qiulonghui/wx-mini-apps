@@ -2,3 +2,23 @@
 <template name="toast">
   <view wx:if="{{toast.show}}" class='toast'>{{toast.info}}</view>
 </template>
+
+<template name="goodslist">
+  <view class='main-wrap goodslist'>
+    <view class='top'>
+      <text class='title'>{{goodslist.title}}</text>
+    </view>
+    <block wx:for="{{goodslist.itemArr}}">
+      <navigator url='{{item.url}}' class='item'>
+        <image src='/pages/img/{{item.img}}.png'></image>
+        <view class='text-cont'>
+          <text class='main-text'>{{item.mainText}}</text>
+          <text class='middle-text'>{{item.middleText}}</text>
+          <view class='sub-text'>
+            <text>兑换积分</text><text class='spilt'>:</text><text>{{item.score}}分</text>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</template>
