@@ -9,7 +9,8 @@
     "pages/intgral/intgral",
     "pages/store/store",
     "pages/goodslist/goodslist",
-    "pages/goodsdetail/goodsdetail"
+    "pages/goodsdetail/goodsdetail",
+    "pages/invitefriend/invitefriend"
   ],
   "window": {
     "backgroundTextStyle": "light",

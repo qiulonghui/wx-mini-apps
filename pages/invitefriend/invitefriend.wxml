@@ -1,0 +1,47 @@
+<!--pages/invitefriend/invitefriend.wxml-->
+<view class='main-wrap'>
+  <view class='top'>
+    <view class='user-wrap'>
+      <image mode='widthFix' src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <text class='user-name'>{{userInfo.nickName}}</text>
+    <view class='user-info'>
+      <view>
+        <text>我的朋友</text>
+        <text>0</text>
+      </view>
+      <view>
+        <text>返还积分</text>
+        <text>0</text>
+      </view>
+      <view>
+        <text>积分总数</text>
+        <navigator url='/pages/regist/regist' class='regist-btn'>点击注册</navigator>
+      </view>
+    </view>
+  </view>
+  <import src="/pages/common.wxml"/>
+  <view class='cont'>
+    <template is="tmp-top-title" data="{{title}}"></template>
+    <form>
+      <view class='wrap'>
+        <label>朋友称呼</label>
+        <input name="" placeholder='朋友姓名'></input>
+      </view>
+      <view class='wrap'>
+        <label>意向项目</label>
+        <input name="" placeholder='意向项目'></input>
+      </view>
+      <view class='wrap tel'>
+        <label>+86</label>
+        <input name="" placeholder='填写手机号' type='number'></input>
+      </view>
+      <button class='submit-btn' formType='submit' hover-class='submit-btn-hover'>确认输入</button>
+    </form>
+    <view class='bottom'>
+      <text>注 ：</text>
+      <text>1、该号码注册了会员,立即获得100积分</text>
+      <text>2、该号码进行消费，获取10%的积分返还</text>
+    </view>
+  </view>
+</view>

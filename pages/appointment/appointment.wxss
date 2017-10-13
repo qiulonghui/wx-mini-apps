@@ -174,10 +174,10 @@
   margin: 64rpx 30rpx;
 }
 .btn-view button{
-    border: 1rpx solid #500047;
-    border-radius: 10rpx;
-    background-color: #a32351;
-    color: #ffffff;
+  border: 1rpx solid #500047;
+  border-radius: 10rpx;
+  background-color: #a32351;
+  color: #ffffff;
 }
 .btn-view button.other-button-hover{
   background-color: #a85879;

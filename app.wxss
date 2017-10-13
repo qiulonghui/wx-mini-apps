@@ -124,3 +124,30 @@
   border-style:solid;
   transform:translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
 }
+
+
+/* 标题title的公共样式 */
+.tmp-top-title{
+  height: 90rpx;
+  padding: 0 30rpx;
+  display: flex;
+  align-items: center;
+  font-size: 34rpx;
+  color: #333333;
+  background-color: #fff;
+  position: relative
+}
+.tmp-top-title text{
+  margin-left: 32rpx;
+}
+.tmp-top-title::after{
+  position: absolute;
+  content: "";
+  border-top: 1rpx solid #e5e5e5;
+  background:#e5e5e5;
+  bottom: 0;
+  left: 0;
+  right:0;
+  transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5); 
+}

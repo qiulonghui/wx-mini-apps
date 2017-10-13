@@ -2,9 +2,9 @@
 <view class='main-wrap'>
   <view class='top'>
     <view class='user-wrap'>
-      <image mode='widthFix' src='/pages/img/user-ava@2x.png'></image>
+      <image mode='widthFix' src='{{userInfo.avatarUrl}}'></image>
     </view>
-    <text class='user-name'>用户名</text>
+    <text class='user-name'>{{userInfo.nickName}}</text>
     <view class='user-info'>
       <view>
         <text>我的余额</text>

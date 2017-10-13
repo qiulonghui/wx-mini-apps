@@ -1,0 +1,135 @@
+/* pages/invitefriend/invitefriend.wxss */
+.main-wrap{
+  background-color: #e6e6e6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.top{
+  height: 440rpx;
+  background-image:url(https://ip.freep.cn/591769/wximg/vipcenter-bg@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  padding-top:88rpx; 
+  box-sizing: border-box;
+}
+.top .user-wrap{
+  width:144rpx;
+  height:144rpx;
+  border-radius: 50%; 
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 16rpx;
+}
+.user-wrap image{
+  width: 100%;
+}
+.user-name{
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 32rpx;
+  margin-bottom: 32rpx;
+}
+.user-info{
+  display: flex;
+  height: 120rpx;
+}
+.user-info view{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 12rpx;
+  padding-bottom: 18rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.user-info view::after{
+  content: "";
+  width: 1rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 0;
+  background-color:#fff; 
+  transform: scaleX(0.5);
+  -webkit-transform: scaleX(0.5); 
+}
+.user-info view:first-child:after{
+  content: none;
+}
+.user-info text{
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-size: 28rpx;
+  text-align: center;
+}
+.user-info .regist-btn{
+  padding: 0;
+  height: auto;
+  font-size: 28rpx;
+  display: block;
+  text-align: center;
+  width: 120rpx;
+  color: #b7882d;
+  margin: 0 auto;
+  border: 1rpx solid #b7882d;
+  border-radius: 10rpx;
+  padding:0 10rpx;
+}
+.cont form .wrap{
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  background-color: #fff;
+  position: relative;
+}
+
+.cont form .wrap::after{
+  position: absolute;
+  content: "";
+  border-top: 1rpx solid #e5e5e5;
+  background:#e5e5e5;
+  bottom: 0;
+  left: 30rpx;
+  right:0;
+  transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5); 
+}
+.wrap label{
+  font-size: 34rpx;
+  color: #333;
+  width: 170rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.wrap input{
+  flex: 1;
+  font-size: 32rpx;
+  padding-left: 25rpx;
+  color: #333;
+}
+.cont .tel label{
+  border-right: 1rpx solid #e5e5e5;
+}
+.submit-btn{
+  border: 1rpx solid #500047;
+  border-radius: 10rpx;
+  background-color: #a32351;
+  color: #ffffff;
+  margin: 32rpx 30rpx;
+}
+.submit-btn-hover{
+  background-color: #a85879;
+}
+.bottom{
+  padding: 0 30rpx;
+}
+.bottom text{
+  display: block;
+  width: 100%;
+  color: #b7882d;
+  font-size: 24rpx;
+  margin-bottom: 16rpx;
+}
