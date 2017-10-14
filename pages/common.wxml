@@ -27,7 +27,7 @@
 <!-- 标题title wxml模板 -->
 <template name="tmp-top-title">
   <view class='tmp-top-title'>
-    <image style='width:48rpx; height:48rpx;' src='/pages/img/{{title.icon}}@2x.png'></image>
-    <text>{{title.text}}</text>
+    <image style='width:48rpx; height:48rpx;' src='/pages/img/{{icon}}@2x.png'></image>
+    <text>{{text}}</text>
   </view>
 </template>

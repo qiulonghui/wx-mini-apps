@@ -2,7 +2,7 @@
 const app = getApp()
 Page({
   data: {
-    title: { icon:"intro-eme",text:"介绍朋友"},
+    topTitle: { icon:"intro-eme",text:"介绍朋友"},
     userInfo:{}
   },
   onLoad:function(){

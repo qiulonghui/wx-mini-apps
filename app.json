@@ -10,7 +10,9 @@
     "pages/store/store",
     "pages/goodslist/goodslist",
     "pages/goodsdetail/goodsdetail",
-    "pages/invitefriend/invitefriend"
+    "pages/invitefriend/invitefriend",
+    "pages/myoppoint/myoppoint",
+    "pages/consrecord/consrecord"
   ],
   "window": {
     "backgroundTextStyle": "light",

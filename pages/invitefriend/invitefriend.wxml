@@ -22,7 +22,7 @@
   </view>
   <import src="/pages/common.wxml"/>
   <view class='cont'>
-    <template is="tmp-top-title" data="{{title}}"></template>
+    <template is="tmp-top-title" data="{{...topTitle}}"></template>
     <form>
       <view class='wrap'>
         <label>朋友称呼</label>

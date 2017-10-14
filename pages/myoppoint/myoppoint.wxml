@@ -1,0 +1,25 @@
+<!--pages/myoppoint/myoppoint.wxml-->
+<import src='/pages/common.wxml'/>
+<view class='main-wrap'>
+  <template is="tmp-top-title" data="{{...topTitle}}"></template>
+  <block wx:for="{{oppintItem}}">
+    <navigator url='{{item.state=="ing"?item.url:""}}' class='item'>
+      <image class='state' src='/pages/img/{{item.state}}@2x.png'></image>
+      <view class="opp-number">
+        <text>预约号</text><text>：</text><text>{{item.oppnumber}}</text>
+      </view>
+      <view class='other-info'>
+        <text>预约时间</text><text>：</text><text>{{item.opptime}}</text>
+      </view>
+      <view class='other-info'>
+        <text>就诊人</text><text>：</text><text>{{item.people}}</text>
+      </view>
+      <view class='other-info'>
+        <text>就诊项目</text><text>：</text><text>{{item.oppitem}}</text>
+      </view>
+      <view class='other-info'>
+        <text>创建时间</text><text>：</text><text>{{item.cttime}}</text>
+      </view>
+    </navigator>
+  </block>
+</view>
