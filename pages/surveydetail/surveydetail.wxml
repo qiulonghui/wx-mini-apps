@@ -1,0 +1,33 @@
+<!--pages/surveydetail/surveydetail.wxml-->
+<view class='main-wrap'>
+  <import src="/pages/common.wxml"/>
+  <template is="tmp-top-title" data="{{...topTitle}}"></template>
+  <view class='cont-wrap' wx:for="{{starArr}}"  wx:for-index="siIndex">
+    <view class='title'>{{item.surveyItem}}</view>
+    <view class='img-wrap'>
+      <block 
+      wx:for="{{item.star}}" 
+      wx:for-item="imgItem" 
+      wx:for-index="imgIndex">
+        <image src='/pages/img/star-{{imgItem}}.png' 
+                data-current-item='{{siIndex}}' 
+                data-score='{{imgIndex+1}}' 
+                bindtap='getScore'
+        ></image>
+      </block>
+    </view>
+  </view>
+  <form bindsubmit='formsubmit'>
+    <view class='cont-wrap'>
+      <view class='title'>您的意见和建议</view>
+      <textarea name="suggest" placeholder="请输入您的文字（不要超过150字）" maxlength="150"></textarea>
+    </view>
+    <view class='btn-wrap'>
+      <button 
+      form-type='submit'
+      class='submit-btn' 
+      hover-class='submit-btn-hover'      
+      >提交问卷</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,11 @@
+<!--pages/vipInfo/vipinfo.wxml-->
+<view class='main-wrap'>
+  <import src="/pages/common.wxml"/>
+  <template is="tmp-top-title" data="{{...topTitle}}"></template>
+    <block wx:for="{{infoArr}}">
+      <view class='info-item'>
+        <view class='title'>{{item.title}}</view>
+        <view class='info'>{{item.info}}</view>
+      </view>
+    </block> 
+</view>

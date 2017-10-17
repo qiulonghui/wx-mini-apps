@@ -1,0 +1,10 @@
+<!--pages/giftcert/giftcert.wxml-->
+<view class='main-wrap'>
+  <import src="/pages/common.wxml"/>
+  <template is="tmp-top-title" data="{{topTitle}}"></template>
+  <view class='gc-item'>
+    <view>激光脱毛</view>
+    <view></view>
+    <view></view>
+  </view>
+</view>

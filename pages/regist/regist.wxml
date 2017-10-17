@@ -1,6 +1,6 @@
 <!--pages/regist/regist.wxml-->
 <view class="main-wrap">
-  <image class='logo' src='/pages/img/LOGO@2x.png'></image>
+  <image class='logo' bindtap='fn' src='/pages/img/LOGO@2x.png'></image>
   <form bindsubmit='formSubmit'>
     <view class='input-wrap'>
       <input class='input' name="peopleName" placeholder='姓名' placeholder-style='color:#fff' maxlength='6'></input>

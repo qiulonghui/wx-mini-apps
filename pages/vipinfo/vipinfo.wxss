@@ -1,0 +1,35 @@
+/* pages/vipInfo/vipinfo.wxss */
+.main-wrap{
+  background-color: #e6e6e6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.info-item{
+  padding: 28rpx 30rpx;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+
+}
+.info-item::after{
+  position: absolute;
+  content: "";
+  border-top: 1rpx solid #e5e5e5;
+  background:#e5e5e5;
+  bottom: 0;
+  left: 30rpx;
+  right:0;
+  transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5); 
+}
+.info-item .title{
+  width: 140rpx;
+  font-size: 34rpx;
+  color: #333;
+}
+.info-item .info{
+  flex: 1;
+  text-align: right;
+  font-size: 28rpx;
+  color: #a4a9b0;
+}

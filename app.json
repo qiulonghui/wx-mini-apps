@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
     "pages/appointment/appointment",
     "pages/map/map",
     "pages/regist/regist",
@@ -12,7 +11,10 @@
     "pages/goodsdetail/goodsdetail",
     "pages/invitefriend/invitefriend",
     "pages/myoppoint/myoppoint",
-    "pages/consrecord/consrecord"
+    "pages/consrecord/consrecord",
+    "pages/surveydetail/surveydetail",
+    "pages/vipinfo/vipinfo",
+    "pages/giftcert/giftcert"
   ],
   "window": {
     "backgroundTextStyle": "light",

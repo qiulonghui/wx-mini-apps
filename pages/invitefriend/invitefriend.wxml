@@ -23,7 +23,7 @@
   <import src="/pages/common.wxml"/>
   <view class='cont'>
     <template is="tmp-top-title" data="{{...topTitle}}"></template>
-    <form>
+    <form bindsubmit='formsubmit'>
       <view class='wrap'>
         <label>朋友称呼</label>
         <input name="" placeholder='朋友姓名'></input>
