@@ -2,12 +2,18 @@
 <view class='main-wrap'>
   <import src="/pages/common.wxml"/>
   <template is="tmp-top-title" data="{{...topTitle}}"></template>
-  <view class='item-wrap' wx:for="{{consItem}}">
-    <view class='cons-type'>
-      <text>项目类别： </text><text>{{item.consType}}</text>
+  <block wx:if="{{isLogin}}">
+    <view 
+    class='item-wrap' 
+    wx:for="{{consItem}}">
+      <view class='cons-type'>
+        <text>项目类别： </text><text>{{item.consType}}</text>
+      </view>
+      <view class='cons-time'>
+        <text>消费时间</text><text class='split'>:</text><text>{{item.consTime}}</text>
+      </view>
     </view>
-    <view class='cons-time'>
-      <text>消费时间</text><text class='split'>:</text><text>{{item.consTime}}</text>
-    </view>
-  </view>
+  </block>
+  <view wx:else>请先登录</view>
+
 </view>

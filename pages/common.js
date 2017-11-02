@@ -19,3 +19,29 @@ exports.Toast = {
   }
 
 }
+
+exports.Model = {
+  showModel(headerText, tipInfo, picShow, picSrc, cbtnShow, navUrl, navText){
+    var model = this.data.model || {};
+    model = {
+      show: true,
+      headerText: headerText,
+      picShow: picShow,
+      picSrc: picSrc,
+      tipInfo: tipInfo,
+      cbtnShow: cbtnShow,
+      navUrl: navUrl,
+      navText: navText
+    }
+
+    this.setData({
+      model:model
+    })
+  },
+  
+  clearModel(){
+    this.setData({
+      "model.show": false
+    })
+  }
+}

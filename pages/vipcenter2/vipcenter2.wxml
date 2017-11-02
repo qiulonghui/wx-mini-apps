@@ -1,0 +1,31 @@
+<!--pages/vipcenter/vipcenter.wxml-->
+<view class='main-wrap'>
+  <view class='top'>
+    <view class='user-wrap'>
+      <image mode='widthFix' src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <text class='user-name'>{{userInfo.nickName}}</text>
+    <view class='user-info'>
+      <view>
+        <text>我的余额</text>
+        <text>6000.00</text>
+      </view>
+      <view>
+        <text>我的积分</text>
+        <text>600800</text>
+      </view>
+      <view>
+        <text>就诊卡号</text>
+        <text>170800101</text>
+      </view>
+    </view>
+  </view>
+  <view class='cont'>
+    <block wx:for="{{itemArr}}">
+      <navigator url='{{item.url}}' class='cont-item'>
+        <image src='/pages/img/{{item.img}}@2x.png'></image>
+        <text>{{item.text}}</text> <text class='info' wx:if="{{item.infoFlag}}">{{item.info}}</text>
+      </navigator>
+    </block>
+  </view>
+</view>

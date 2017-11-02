@@ -22,5 +22,8 @@
     <button class='submit-btn' form-type='submit'>点击注册</button>
   </form>
 </view>
+
 <import src="/pages/common.wxml"/>
 <template is="toast" data="{{toast}}"></template>
+<template is="tmp-model" data="{{model}}"></template>
+

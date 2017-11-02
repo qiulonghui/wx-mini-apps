@@ -10,6 +10,45 @@
 .gc-item{
   background-color: #fff;
   margin: 0 30rpx 32rpx 30rpx;
+  height: 188rpx;
   padding: 32rpx;
   padding-bottom: 24rpx;
+  background-image: url(https://ip.freep.cn/591769/wximg/my-gift-bg@2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  position: relative;
+  box-sizing: border-box;
+}
+.gc-name{
+  font-size: 34rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+.gc-number{
+  font-size: 24rpx;
+  color: #a4a9b0;
+  margin-bottom: 6rpx;
+}
+.gc-time{
+  font-size: 24rpx;
+  color: #a4a9b0;
+}
+.gc-time.usable{
+  color: #a32351;
+}
+.gc-state{
+  width: 188rpx;
+  height: 188rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1rpx dashed #aa335e;
+}
+.gc-state image{
+  width: 100rpx;
+  height: 100rpx;
 }

@@ -1,10 +1,15 @@
 <!--pages/giftcert/giftcert.wxml-->
 <view class='main-wrap'>
   <import src="/pages/common.wxml"/>
-  <template is="tmp-top-title" data="{{topTitle}}"></template>
-  <view class='gc-item'>
-    <view>激光脱毛</view>
-    <view></view>
-    <view></view>
-  </view>
+  <template is="tmp-top-title" data="{{...topTitle}}"></template>
+  <block wx:for="{{gcItemArr}}">
+    <view class='gc-item'>
+      <view class='gc-name'>{{item.gcName}}</view>
+      <view class='gc-number'><text>礼物券号 ：</text><text>{{item.gcNumber}}</text></view>
+      <view class='gc-time {{item.gcState=="yes"?"usable":""}}'><text>使用时间 ：</text><text>{{item.gcTime}}</text></view>
+      <view class='gc-state'>
+        <image src='/pages/img/lq-state-{{item.gcState}}@2x.png'></image>
+      </view>
+    </view>
+  </block>
 </view>

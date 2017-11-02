@@ -1,0 +1,11 @@
+<!--pages/satisurvey/satisurvey.wxml-->
+<view class="main-wrap">
+  <image class='bg-img' src='/pages/img/myd-bg@2x.png '></image>
+  <view class='text-info'>
+    <view>为了让您有更好的就诊体验，</view>
+    <view>请协助我们完成满意度调查，</view>
+    <view>我们将以更好的状态为您提供医疗帮助。</view>
+    <view>完成调查可获得免费体验礼券哦~</view>
+  </view>
+  <navigator class='url-btn' url='/pages/surveydetail/surveydetail'>点击开始</navigator>
+</view>

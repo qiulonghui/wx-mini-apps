@@ -5,6 +5,7 @@
     "pages/map/map",
     "pages/regist/regist",
     "pages/vipcenter/vipcenter",
+    "pages/vipcenter2/vipcenter2",
     "pages/intgral/intgral",
     "pages/store/store",
     "pages/goodslist/goodslist",
@@ -14,12 +15,32 @@
     "pages/consrecord/consrecord",
     "pages/surveydetail/surveydetail",
     "pages/vipinfo/vipinfo",
-    "pages/giftcert/giftcert"
+    "pages/giftcert/giftcert",
+    "pages/satisurvey/satisurvey"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#a32351",
+    "color": "#888888",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"/pages/img/i-icon.png",
+        "selectedIconPath":"/pages/img/i-icon-std.png"       
+      },
+      {
+        "pagePath": "pages/vipcenter/vipcenter",
+        "text": "我的",
+        "iconPath": "/pages/img/my-icon.png",
+        "selectedIconPath": "/pages/img/my-icon-std.png"
+      }
+    ]
   }
+
 }

@@ -1,10 +1,40 @@
 <!--index.wxml-->
-<view>
-  <navigator url='/pages/appointment/appointment'>挂号预约页</navigator>
-  <navigator url='/pages/regist/regist'>注册页面</navigator>
-  <navigator url='/pages/vipcenter/vipcenter'>会员中心页面</navigator>
-  <navigator url='/pages/invitefriend/invitefriend'>介绍朋友页面</navigator>
-  <navigator url='/pages/myoppoint/myoppoint'>我的预约页面</navigator>
-  <navigator url='/pages/consrecord/consrecord'>消费记录页面</navigator>
-  <navigator url='/pages/surveydetail/surveydetail'>满意度调查页面</navigator> 
+<view class='main-wrap'>
+  <image class='index-img'
+   mode='widthFix'
+   src='/pages/img/index_ub.jpg'></image>
+  <view class='item-wrap'>
+    <navigator class='border-t-l' style='background-color:#ff5065' url='/pages/appointment/appointment'>
+     <text>挂号预约</text>
+     <image src='/pages/img/wd.svg'></image>
+    </navigator>
+    <navigator url='/pages/regist/regist' style='background-color:#3b96ff'>
+      <text>注册会员</text>
+      <image src='/pages/img/wd.svg'></image>
+    </navigator>
+    <navigator class='border-t-r' style='background-color:#35b9ff' url='/pages/vipcenter2/vipcenter2'>
+      <text>会员中心</text>
+      <image src='/pages/img/wd.svg'></image>
+    </navigator>
+    <navigator style='background-color:#4ada83' url='/pages/invitefriend/invitefriend'>
+      <text>介绍朋友</text>
+      <image src='/pages/img/wd.svg'></image>
+    </navigator>
+    <navigator style='background-color:#2addbd' url='/pages/myoppoint/myoppoint'> 
+      <text>我的预约</text>
+      <image src='/pages/img/wd.svg'></image>
+    </navigator>
+    <navigator style='background-color:#2addbd' url='/pages/consrecord/consrecord'>
+      <text>消费记录</text>
+      <image src='/pages/img/wd.svg'></image>
+    </navigator>
+    <navigator class='border-b-l' style='width:48.5%;background-color:#fdb64a' url='/pages/satisurvey/satisurvey'> 
+     <text>满意度调查</text>
+     <image src='/pages/img/wd.svg'></image>
+    </navigator>
+    <navigator class='border-b-r' style='width:48.5%;background-color:#fdb64a' url='/pages/satisurvey/satisurvey'>
+      <text>满意度调查</text>
+      <image src='/pages/img/wd.svg'></image>
+    </navigator> 
+  </view>
 </view>

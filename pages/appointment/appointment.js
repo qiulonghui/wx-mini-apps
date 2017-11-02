@@ -22,6 +22,7 @@ var itemArr = [
 ]
 
 var Zan = require('../common.js')
+var API = require('../../utils/ajaxapi.js')
 function getNowTime(){
   //获取当前时间
   var date = new Date()
@@ -70,7 +71,10 @@ Page(Object.assign({},Zan.Toast,{
   },
 
   onLoad:function(){
-    
+    var that = this
+    API.ajax("",function(res){
+      console.log(res)
+    })
   },
   
   selected: function(e){

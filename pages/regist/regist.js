@@ -1,6 +1,6 @@
 // pages/regist/regist.js
 var common = require("../common.js")
-Page(Object.assign({},common.Toast,{
+Page(Object.assign({},common.Toast,common.Model,{
   data:{
     array:["女","男"],
     index: 0,
@@ -8,6 +8,7 @@ Page(Object.assign({},common.Toast,{
       show:false,
       info:""
     },
+    model:{},
     second:60,
     codeShow:true
   },
@@ -37,9 +38,14 @@ Page(Object.assign({},common.Toast,{
       this.showToggle("请输入6位数验证码!")
     }else{
       //提交表单发送请求，显示提示信息
-      wx.showToast({
-        title: '注册成功',
-      })
+      var headerText="注册成功"
+      var tipInfo = "注册成功，欢迎加入大家庭。"
+      var picShow = true
+      var picSrc = "/pages/img/reg-success@2x.png"
+      var cbtnShow = true
+      var navUrl = "/pages/vipcenter2/vipcenter2"
+      var navText = "会员中心"
+      this.showModel(headerText, tipInfo, picShow, picSrc, cbtnShow, navUrl, navText)
     }
   },
   codeBtnToggle:function(){

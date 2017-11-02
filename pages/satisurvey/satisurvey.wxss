@@ -1,0 +1,35 @@
+/* pages/satisurvey/satisurvey.wxss */
+.main-wrap{
+  background-color: #e6e6e6;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #a85879;
+}
+.bg-img{
+  width: 821rpx;
+  height: 434rpx;
+  display: block;
+  margin: 0 auto;
+  margin-left: -30rpx;
+  margin-top: 200rpx;
+  margin-bottom: 50rpx;
+}
+.text-info{
+  margin-bottom: 95rpx;
+}
+.text-info view{
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+}
+.url-btn{
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 36rpx;
+  margin: 0 30rpx;
+  border: 1rpx solid #500047;
+  background-color: #a32351;
+  border-radius: 10rpx;
+}

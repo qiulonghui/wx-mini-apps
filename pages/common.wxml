@@ -31,3 +31,20 @@
     <text>{{text}}</text>
   </view>
 </template>
+
+<!-- model弹出层 -->
+<template name="tmp-model">
+  <view class='model-wrap' wx:if="{{model.show}}">
+    <view class='model-main'>
+      <view class='model-header'>{{model.headerText}}</view>
+      <view class='model-body'>
+        <image wx:if="{{model.picShow}}" src='{{model.picSrc}}' mode='widthFix'></image>
+        <view class='info'>{{model.tipInfo}}</view>
+      </view>
+      <view class='model-bottom'>
+        <view wx:if="{{model.cbtnShow}}" class='btn cancel-btn' bindtap='clearModel'>取消</view>
+        <navigator url='{{model.navUrl}}' class='btn' bindtap='clearModel'>{{model.navText}}</navigator>
+      </view>
+    </view>
+  </view>
+</template>  
