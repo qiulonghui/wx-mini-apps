@@ -1,4 +1,4 @@
-@import "./zanui-weapp/dist/index.wxss";
+/* @import "./zanui-weapp/dist/index.wxss"; */
 /**app.wxss**/
 .container{
   background: #e6e6e6;
